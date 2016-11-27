@@ -1,0 +1,410 @@
+/*
+Theme Name: Classic_me
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+}
+
+audio,
+canvas,
+video {
+	display: inline-block;
+	max-width: 100%;
+}
+
+html {
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	color: #2b2b2b;
+	font-family: Lato, sans-serif;
+	font-size: 1.0 em;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+/*	background: #f5f5f5;	*/
+}
+
+a {
+	color: #0063DC;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+a:active,
+a:hover {
+	color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-weight: 500;
+	margin: 15px 0 12px;
+}
+
+h1 {
+	font-size: 26px;
+	line-height: 1.3846153846;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 1;
+}
+
+h3 {
+	font-size: 22px;
+	line-height: 1.0909090909;
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+h5 {
+	font-size: 18px;
+	line-height: 1.3333333333;
+}
+
+h6 {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+#page{
+	margin: 0 auto;
+}
+
+#masthead{
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+	position: fixed;
+	border-bottom: solid 1px;
+	background-color: #E6E6E6;
+	position: fixed;
+	top: 0;
+}
+.site-header a{
+	color: #000;
+}
+.site-header a:hover{
+	text-decoration: underline;
+}
+.site-title a:hover{
+	text-decoration: none;
+}
+.header-main{
+	width: 1024px;
+	margin: 0 auto;
+	border: solid 0px;
+}
+.site-title {
+    float: left;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 48px;
+    margin: 0;
+}
+.primary-navigation {
+    float: right;
+    font-size: 1em;
+    margin: 0px 12px;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.site-navigation ul {
+    list-style: outside none none;
+    margin: 0;
+}
+.primary-navigation li {
+    border: 0 none;
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+    display: inline;
+}
+
+.primary-navigation a {
+    display: inline-block;
+    padding: 0px 12px;
+    white-space: nowrap;
+}
+.primary-navigation a:hover{
+	border-bottom: 2px solid;
+	text-decoration: none;
+}
+#search-container{
+	border: 0 none;
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+    float: right;
+}
+
+#main{
+	width: 1024px;
+	margin: 50px auto 20px;
+	border: solid 0px;
+	display: table;
+	padding-top: 50px;
+}
+
+#primary{
+	width: 750px;
+	border: solid 0px;
+	float: left;
+	box-sizing:border-box;
+	padding: 0px 30px;
+}
+
+article{
+	margin-bottom: 40px;
+	border-bottom: dashed #888 1px;
+	padding-bottom: 30px;
+}
+article+article{
+	padding-top: 20px;
+}
+.tag{
+	text-align: center;
+}
+.tag a{
+	padding: 2px 15px;
+	border-radius: 15px;
+	border: solid 1px;
+	font-size: 0.9em;
+}
+.tag a+a{
+	margin-left: 10px;
+	}
+.tag a:hover{
+	background-color: #89A6CE;
+}
+.storytitle{
+	text-align: center;
+}
+.storytitle a{
+	color: #000;
+}
+.meta{
+	text-align: center;
+	font-size: 0.9em;
+}
+.meta a{
+	margin-left: 10px;
+	color: #000;
+}
+.meta a:hover{
+	text-decoration: underline;
+}
+.pagination{
+	padding: 10px 0;
+}
+
+.pagination .current{
+	background-color:#F2F2F2;
+}
+.pagination .page-numbers{
+	border: solid 1px;
+	padding: 0px 10px;
+	float: left;
+}
+
+.pagination a:hover{
+	background-color:#89A6CE;
+}
+.page-numbers+.page-numbers{
+	margin-left: 5px;
+}
+
+/* pagenavi */
+#pagenavi a, #pagenavi a:visited, #pagenavi span {
+height: 25px;
+line-height: 25px;
+display: inline-block;
+padding: 1px 8px;
+border: 1px solid;
+}
+#pagenavi a, #pagenavi a:visited {
+margin: 0 2px;
+}
+#pagenavi span.pages {
+color: #777;
+font-weight: bold;
+margin-right: 10px;
+padding: 0;
+}
+#pagenavi span.current {
+margin: -2px 2px -1px;
+padding: 0 9px;
+height: 28px;
+line-height: 28px;
+text-align: center;
+}
+
+#secondary{
+	width: 250px;
+	border: solid 0px;
+	float: right;
+	font-size:14px;
+	padding-left: 23px;
+	border-left: 1px solid #555;
+}
+
+#secondary a{
+	color: #555;
+}
+#secondary a:hover{
+	color: #000;
+}
+#secondary li:hover{
+	background: #eee;
+	ba
+	border-bottom: 1px solid;
+}
+.widget-title{
+	border-bottom:1px dashed #888;
+	line-height:2em;
+}
+#secondary li{
+	list-style:none;
+	line-height:1.5em;
+	padding: 0px 0px;
+	border-sizing: border-box;
+}
+#colophon{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	border: solid 0px;
+	background-color: #E6E6E6;
+	clear: both;
+	display: block;
+	font-size:0.95em;
+}
+
+.site-info{
+	width: 1024px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 10px 0px;
+	border: solid 0px;
+	text-align: center;
+}
+.site-info a{
+	line-height: 1.5em;
+	color: #000;
+}
+
+footer ul{
+	list-style: outside none none;
+    margin: 0;
+}
+
+footer li {
+    border: 0 none;
+    display: inline-block;
+    padding 3px 0px;
+    position: relative;
+}
+
+footer li+li {
+	border-left:1px solid #777;
+}
+footer li a{
+	padding:0 20px;
+}
+
+.footer-info{
+	padding: 6px 0 0px;
+}
+
+@media screen and (max-width:960px){
+	.header-main{
+		width: 90%;
+		margin: 0 auto;
+		border: solid 0px;
+		padding: 0px 0px;
+	}
+	#masthead{
+		position: relative;
+	}
+	#search-container{
+		display: none;
+	}
+	#main{
+	width: 90%;
+	margin: 50px auto 20px;
+	border: solid 0px;
+	display: table;
+	padding: 0px;
+	}
+	#primary{
+	width: 100%;
+	border: solid 0px;
+	float: left;
+	padding: 0px 0px;
+	box-sizing:border-box;
+	}
+	#secondary{
+	display: none;
+	}
+	.site-info{
+	width: 90%;
+	}
+	.small-links{
+		display: none;
+	}
+}
